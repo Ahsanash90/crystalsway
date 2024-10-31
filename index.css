@@ -1,0 +1,874 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-color: #3c3c3c;
+    color: white;
+    height: 3rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+header ul{
+    display: flex;
+    list-style: none;
+}
+header ul li{
+    margin-left: 1.5rem;
+    position: relative;
+    left: 32rem;
+    cursor: pointer;
+    transition: ease-in-out .5s;
+}
+header ul li a{
+    color: white;
+    text-decoration: none;
+}
+header ul li:hover{
+    font-size: 1.2rem;
+    text-decoration: underline 2px white;
+}
+header h1{ 
+    position: relative;
+    left: 2rem;
+    
+}
+.social{
+    position: relative;
+    left: 34rem;
+    top: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+}
+.social-icons{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin-left: -4.4rem;
+    margin-top: 0.4rem;
+}
+.social-icon{
+    margin-left: 2rem;
+}
+.fuo{
+    background-color: #3c3c3c;
+    width: 16rem;
+    height: 3rem;
+    border-radius: .6rem;
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: -1.5rem;
+}
+.line1{
+    background-color: red;
+    width: 45rem;
+    height: .1rem;
+    position: relative;
+    left: -15rem;
+    margin-top: 1rem;
+}
+.categories{
+    background-color: #3c3c3c;
+    margin-top: 4rem;
+    height: 6rem;
+    width: 77rem;
+    position: relative;
+    left: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.categories h1{
+    margin-top: .3rem;
+    color: white;
+}
+.categories ul{
+    display: flex;
+    list-style: none;
+    font-size: 1.1rem;
+    margin-left: -3.6rem;
+    margin-top: -.5rem;
+}
+.categories ul li{
+    text-align: center;
+    margin-left: 1.2rem;
+    background-color: rgb(255, 170, 11);
+    border-radius: .1rem;
+    padding: .2rem .3rem;
+    transition: ease-in-out .3s;
+}
+.categories ul li:hover{
+    font-size: 1.2rem;
+    
+}
+.categories ul li a{
+    text-decoration: none;
+    color: #3c3c3c;
+    transition: ease-in-out;
+}
+.categories ul li a:hover{
+    color: white;
+}
+.sidebar{
+    background-color: #c6c6c6;
+    width: 16rem;
+    border-radius: 1rem;
+    position: relative;
+    left: 62rem;
+    top: -120rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.todayh{
+    display: none;
+    position: relative;
+    top: 4rem;
+    left: 2rem;
+    border: .1rem solid black;
+    width: 55rem;
+    padding-left: 2.5rem;
+    padding-bottom: 2rem;
+    padding-right: 1.5rem;
+}
+.todayh h1{
+    text-decoration: underline red .2rem;
+}
+.todayhp{
+    display: flex;
+    justify-content: space-around;
+}
+.todayhc img{
+    height: 18rem;
+    width: 14rem;
+    margin: 1.5rem;
+}
+.todayhc{
+    display: flex;
+    flex-direction: column;
+    border: .1rem solid black;
+}
+.todayhc h2{
+    margin-top: -.5rem;
+    margin-left: 2rem;
+}
+.todayhc p{
+    word-wrap: break-word;
+    margin-left: 1.6rem;
+    text-align: center;
+    margin-top: -.2rem;
+    width: 14rem;
+}
+.todayhc button{
+    width: 10rem;
+    margin-left: 3.6rem;
+    margin-bottom: 1.4rem;
+    color: white;
+    background-color: red;
+    border: none;
+    padding: .5rem .5rem;
+    border-radius: 3.5rem;
+    cursor: pointer;
+}
+.mostp img{
+    height: 14.6rem;
+    width: 26rem;
+    margin-left: -2rem;
+}
+.mostp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 6rem;
+    border: .1rem solid black;
+    width: 59rem;
+    margin-left: 2rem;
+}
+.mostp h1{
+    text-decoration: underline red .2rem;
+    margin-left: -26rem;
+}
+.mostpc{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+    border: .1rem solid black;
+    padding-left: 3rem;
+    padding-right: 1.2rem;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+}
+.mostpci{
+    display: flex;
+    flex-direction: column;
+    margin-left:2.4rem;
+    align-items: center;
+}
+.mostpci p{
+    word-wrap: break-word;
+    width: 24rem;
+    text-align: center;
+}
+.mostpci h2{
+    font-size: 2rem;
+
+}
+.mostpci button{
+    color: white;
+    background-color: red;
+    border: none;
+    padding: .6rem 6rem;
+    border-radius: 3rem;
+    cursor: pointer;
+}
+footer{
+    background-color: #3c3c3c;
+    height: 27rem;
+    width: 78.9rem;
+    position: relative;
+    left: -.5rem;
+    margin-bottom: -.5rem;
+}
+.footp{
+    text-align: center;
+    color: white;
+    position: relative;
+    top: 2rem;
+    list-style: none;
+}
+.footp li a{
+    text-decoration: none;
+    color: rgb(206, 206, 206);
+    position: relative;
+    top: 2rem;
+}
+.footp li{
+    margin-bottom: 1.5rem;
+}
+.crc{
+    color: rgb(206, 206, 206);
+    text-align: center;
+    position: relative;
+    top: 8rem;
+    left: 1.2rem;
+}
+.footl{
+    position: relative;
+    left: 20rem;
+    top: 5.6rem;
+    background-color: rgb(206, 206, 206);
+    width: 43rem;
+    height: .1rem;
+}
+.topsi img{
+    height: 8rem;
+}
+.topsc{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2.4rem;
+    margin-left: -5rem;
+}
+.tops{
+    position: relative;
+    top: 8rem;
+    left: 2rem;
+    border: .1rem solid black;
+    width: 59rem;
+    padding-bottom: 2.2rem;
+}
+.topsa{
+    color: black;
+    position: relative;
+    top: .5rem;
+    left: 1rem;
+    word-wrap: break-word;
+    width: 8.4rem;
+}
+.topsi{
+    display: flex;
+}
+.sidebar1{
+    background-color: #c6c6c6;
+    width: 16rem;
+    border-radius: 1rem;
+    position: relative;
+    left: 62rem;
+    top: -160rem;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+.news{
+    position: relative;
+    top: -50rem;
+    left: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 59rem;
+    border: .1rem solid black;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+.news h1{
+    color: red;
+}
+.news button{
+    color: white;
+    border: .1rem solid red;
+    background-color: red;
+    border-radius: 2rem;
+    padding: .5rem 12rem;
+    margin-top: 1.4rem;
+    cursor: pointer;
+    transition: ease-in-out .5s;
+}
+.news button:hover{
+    background-color: white;
+    border: .1rem solid red;
+    color: red;
+    transform: translateY(-.5rem);
+}
+.extrac img{
+    height: 16rem;
+    margin-top: 2rem;
+}
+.extra{
+    position: relative;
+    top: -48rem;
+    left: 2rem;
+    border: .1rem solid black;
+    width: 59rem;
+}
+.extrac{
+    border: .1rem solid black;
+    margin: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.extrac p{
+    width: 44rem;
+    word-wrap: break-word;
+    text-align: center;
+}
+.extrac button{
+    margin-top: 1rem;
+    margin-bottom: 1.6rem;
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 2rem;
+    padding: .4rem 12rem;
+    cursor: pointer;
+}
+.support{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 2rem;
+    width: 74rem;
+    margin-left: 3rem;
+    position: relative;
+    top: -42rem;
+}
+.support h1{
+    font-family: "Trirong", sans-serif;
+    font-size: 30px;
+    width: 54rem;
+    text-align: center;
+}
+.support button{
+    margin-top: 1rem;
+    margin-bottom: 2.4rem;
+    padding: .4rem 15rem;
+    border: none;
+    color: white;
+    background-color: rgb(52, 52, 255);
+    border-radius: 2rem;
+    cursor: pointer;
+}
+.thanks{
+    font-size: .8rem;
+    position: relative;
+    top: -38rem;
+}
+.thanks h2{
+    font-family: "Trirong";
+    text-align: center;
+}
+footer{
+    margin-top: -34rem;
+}
+@media only screen and (min-width:768px){
+    .android{
+        display: none;
+    }
+}
+@media only screen and (max-width:768px){
+    @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.android ul{
+        display: flex;
+        list-style: none;
+        justify-content: space-evenly;
+        position: relative;
+        top: -3rem;
+        left: -3.4rem;
+}
+.android ul li{
+    margin-left: 1.2rem;
+    
+}
+.android ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: .8rem;
+    font-weight: 800;
+}
+header{
+    background-color: #3c3c3c;
+    color: white;
+    height: 3rem;
+    margin-top: -.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: -.5rem;
+    width: 24.3rem;
+}
+header ul{
+    display: flex;
+    list-style: none;
+}
+header ul li{
+    display: none;
+    margin-right: .2rem;
+    position: relative;
+    left: -12rem;
+    font-weight: 600;
+    font-size: .8rem;
+    cursor: pointer;
+    transition: ease-in-out .5s;
+}
+header ul li:hover{
+    font-size: 1.2rem;
+    text-decoration: underline 2px white;
+}
+header h1{ 
+    position: relative;
+    left: 6.8rem;
+    top: 4rem;
+    font-size: 2rem;
+    color: #3c3c3c;
+}
+.social{
+    position: relative;
+    left: 6rem;
+    top: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+}
+.social-icons{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin-left: -4.4rem;
+    margin-top: 0.4rem;
+}
+.social-icon{
+    margin-left: 2rem;
+}
+.fuo{
+    background-color: #3c3c3c;
+    width: 12rem;
+    height: 2.4rem;
+    font-size: 1.3rem;
+    border-radius: .6rem;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: -.2rem;
+}
+.line1{
+    background-color: red;
+    width: 20rem;
+    height: .1rem;
+    position: relative;
+    left: -4.2rem;
+    margin-top: 1rem;
+}
+.categories{
+    display: none;
+}
+/*.categories{
+    background-color: #3c3c3c;
+    margin-top: 4rem;
+    height: 6rem;
+    width: 77rem;
+    position: relative;
+    left: 1rem;
+    border-radius: 1rem;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+.categories h1{
+    margin-top: .3rem;
+    color: white;
+}
+.categories ul{
+    display: flex;
+    list-style: none;
+    font-size: 1.1rem;
+    margin-left: -3.6rem;
+    margin-top: -.5rem;
+}
+.categories ul li{
+    text-align: center;
+    margin-left: 1.2rem;
+    background-color: rgb(255, 170, 11);
+    border-radius: .1rem;
+    padding: .2rem .3rem;
+    transition: ease-in-out .3s;
+}
+.categories ul li:hover{
+    font-size: 1.2rem;
+    
+}
+.categories ul li a{
+    text-decoration: none;
+    color: #3c3c3c;
+    transition: ease-in-out;
+}
+.categories ul li a:hover{
+    color: white;
+}*/
+.sidebar{
+    background-color: #c6c6c6;
+    width: 16rem;
+    border-radius: 1rem;
+    position: relative;
+    left: 62rem;
+    top: -162rem;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+.todayh{
+    display: none;
+    position: relative;
+    top: 4rem;
+    left: .5rem;
+    border: .1rem solid black;
+    width: 18rem;
+    padding-left: 2.5rem;
+    padding-bottom: 2rem;
+    padding-right: 1.5rem;
+}
+.todayh h1{
+    text-decoration: underline red .2rem;
+    font-size: 1.4rem;
+}
+.todayhp{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: -.8rem;
+}
+.todayhc img{
+    height: 12rem;
+    width: 10rem;
+    margin: 1.5rem;
+}
+.todayhc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+    border: .1rem solid white;
+}
+.todayhc h2{
+    margin-top: -.5rem;
+    margin-left: -.1rem;
+}
+.todayhc p{
+    word-wrap: break-word;
+    margin-left: -.1rem;
+    text-align: center;
+    margin-top: -.2rem;
+    width: 14rem;
+}
+.todayhc button{
+    width: 10rem;
+    margin-left: -.3rem;
+    margin-bottom: 1.4rem;
+    color: white;
+    background-color: red;
+    border: none;
+    padding: .5rem .5rem;
+    border-radius: 3.5rem;
+    cursor: pointer;
+}
+.mostp img{
+    height: 8.8rem;
+    width: 16rem;
+    margin-left: 0rem;
+    margin: 1rem;
+}
+.mostp{
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 6rem;
+    border: .1rem solid black;
+    width: 22rem;
+    margin-left: 0.4rem;
+}
+.mostp h1{
+    text-decoration: underline red .2rem;
+    margin-left: 0rem;
+    font-size: 1.4rem;
+}
+.mostpc{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    border: .1rem solid white;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+}
+.mostpci{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0rem;
+    align-items: center;
+}
+.mostpci p{
+    word-wrap: break-word;
+    width: 14rem;
+    text-align: center;
+}
+.mostpci h2{
+    font-size: 2rem;
+
+}
+.mostpci button{
+    color: white;
+    background-color: red;
+    border: none;
+    padding: .4rem 5rem;
+    border-radius: 3rem;
+    cursor: pointer;
+}
+footer{
+    background-color: #3c3c3c;
+    height: 27rem;
+    width: 24.4rem;
+    position: relative;
+    left: -.5rem;
+    margin-bottom: -.5rem;
+}
+.footp{
+    text-align: center;
+    color: white;
+    position: relative;
+    top: 2rem;
+    list-style: none;
+}
+.footp li a{
+    text-decoration: none;
+    color: rgb(206, 206, 206);
+    position: relative;
+    top: 2rem;
+    left: -1rem;
+}
+.footp li{
+    margin-bottom: 1.5rem;
+}
+.crc{
+    color: rgb(206, 206, 206);
+    text-align: center;
+    position: relative;
+    top: 8rem;
+    left: 0rem;
+}
+.footl{
+    position: relative;
+    left: 1.8rem;
+    top: 5.6rem;
+    background-color: rgb(206, 206, 206);
+    width: 21rem;
+    height: .1rem;
+}
+.topsi img{
+    height: 5.6rem;
+}
+.topsc{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2.4rem;
+    margin-left: .5rem;
+}
+.tops{
+    position: relative;
+    top: 8rem;
+    left: 0.4rem;
+    border: .1rem solid black;
+    width: 22rem;
+    padding-bottom: 2.2rem;
+}
+.topsa{
+    color: black;
+    position: relative;
+    top: .5rem;
+    left: 1rem;
+    word-wrap: break-word;
+    width: 8.4rem;
+}
+.topsi{
+    display: flex;
+    flex-direction: column;
+}
+.sidebar1{
+    background-color: #c6c6c6;
+    width: 16rem;
+    border-radius: 1rem;
+    position: relative;
+    left: 62rem;
+    top: -160rem;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+.news{
+    position: relative;
+    top: 10rem;
+    left: .4rem;
+    display: flex;
+    flex-direction: column;
+    width: 22rem;
+    border: .1rem solid black;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+.news h1{
+    color: red;
+    font-size: 1.4rem;
+}
+.news button{
+    color: white;
+    border: .1rem solid red;
+    background-color: red;
+    border-radius: 2rem;
+    padding: .3rem 6rem;
+    margin-top: 1.4rem;
+    cursor: pointer;
+    transition: ease-in-out .5s;
+}
+.news button:hover{
+    background-color: white;
+    border: .1rem solid red;
+    color: red;
+    transform: translateY(-.5rem);
+}
+.extrac img{
+    height: 12rem;
+    margin-top: 2rem;
+}
+.extra{
+    position: relative;
+    top: 12rem;
+    left: .3rem;
+    border: .1rem solid black;
+    width: 22rem;
+}
+.extrac{
+    border: .1rem solid white;
+    margin: 2rem 2rem;
+    width: 20rem;
+    position: relative;
+    left: -1.1rem;
+    top: -2.1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.extrac p{
+    width: 20rem;
+    word-wrap: break-word;
+    text-align: center;
+}
+.extrac button{
+    margin-top: 1rem;
+    margin-bottom: 1.6rem;
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 2rem;
+    padding: .3rem 8rem;
+    cursor: pointer;
+}
+.support{
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 2rem;
+    width: 21rem;
+    height: 12rem;
+    margin-left: 1rem;
+    position: relative;
+    top: 16rem;
+}
+.support h1{
+    font-family: "Trirong", sans-serif;
+    font-size: 1.2rem;
+    width: 18rem;
+    text-align: center;
+}
+.support button{
+    margin-top: 1rem;
+    margin-bottom: 2.4rem;
+    padding: .3rem 5rem;
+    border: none;
+    color: white;
+    background-color: rgb(52, 52, 255);
+    border-radius: 2rem;
+    cursor: pointer;
+}
+.thanks{
+    font-size: .8rem;
+    position: relative;
+    top: 20rem;
+}
+.thanks h2{
+    font-family: "Trirong";
+    text-align: center;
+}
+footer{
+    margin-top: 30rem;
+}
+}
