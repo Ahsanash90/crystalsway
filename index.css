@@ -414,6 +414,9 @@ footer{
 footer{
     margin-top: -34rem;
 }
+.typea{
+    display: none;
+}
 @media only screen and (min-width:768px){
     .android{
         display: none;
@@ -423,6 +426,36 @@ footer{
     @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 *{
     font-family: Arial, Helvetica, sans-serif;
+}
+    .typea{
+    display: flex;
+    flex-direction: column;
+    background-color: #c6c6c6;
+    width: 22rem;
+    margin-top: 3rem;
+    margin-left: .6rem;
+    margin-bottom: -3rem;
+    border-radius: .4rem;
+    padding-bottom: 1rem;
+}
+.typea h1{
+    text-align: center;
+    margin-bottom: -.1rem;
+}
+.type{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+}
+.typee{
+    background-color: white;
+    padding: 1px 6px;
+    border-radius: .3rem;
+}
+.typee a{
+    color: black;
+    text-decoration: none;
 }
 .android ul{
         display: flex;
