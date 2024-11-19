@@ -54,5 +54,52 @@ header h2{
     margin-top: 2rem;
 }
 @media only screen and (max-width:768px){
-    
+    header a{
+        text-decoration: none;
+        color: white;
+        font-size: 2rem;
+        position: relative;
+        left: 2rem;
+        top: -.3rem;
+    }
+    header{
+        background-color: rgb(53, 53, 53);
+        height: 3.4rem;
+        display: flex;
+        align-items: center;
+    }
+    header h2{
+        color: white;
+        position: relative;
+        left: 8rem;
+    }
+    .top h1{
+        text-align: center;
+        margin-top: 3rem;
+    }
+    .newsall{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 4rem;
+    }
+    .newsallc{
+        width: 22rem;
+    }
+    .newsalli{
+        display: flex;
+    }
+    .newsalli p{
+        margin-left: 5rem;
+    }
+    .news{
+        text-align: left;
+    }
+    .line{
+        background-color: rgb(53, 53, 53);
+        width: 22rem;
+        height: .1rem;
+        margin-left: -0.3rem;
+        margin-top: 2rem;
+    }   
 }
