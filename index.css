@@ -417,6 +417,29 @@ footer{
 .typea{
     display: none;
 }
+.highlight-note {
+
+      background-color: rgba(255, 0, 0, 0.1); /* Light red background with low opacity */
+
+      color: #ff0000; /* Red text matching the border */
+
+      font-family: ariel;
+
+      font-size: 12px;
+
+      text-align: center;
+
+      padding: 10px;
+
+      border: 1px solid #ff0000; /* Thin red border */
+
+      margin: 20px auto;
+
+      border-radius: 1.4rem; /* Rounded corners */
+
+      max-width: 800px;
+
+}
 @media only screen and (min-width:768px){
     .android{
         display: none;
@@ -427,6 +450,18 @@ footer{
 *{
     font-family: Arial, Helvetica, sans-serif;
 }
+    .highlight-note {
+      background-color: rgba(255, 0, 0, 0.1); /* Light red background with low opacity */
+      color: #ff0000; /* Red text matching the border */
+      font-family: ariel;
+      font-size: 12px;
+      text-align: center;
+      padding: 10px;
+      border: 1px solid #ff0000; /* Thin red border */
+      margin: 20px auto;
+      border-radius: 1.4rem; /* Rounded corners */
+      max-width: 280px;
+    }
     .typea{
     display: flex;
     flex-direction: column;
